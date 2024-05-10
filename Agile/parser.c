@@ -1,3 +1,11 @@
+
+#ifndef CHOCOCINO
+#ifndef SUBMIT
+#ifndef AGILE
+#ifndef OPTIMAL
+#ifndef SATISFICING
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -81,16 +89,54 @@ fprintf(problem, ")\n\t(:goal (and\n\t");
 	fclose(domain);
 	fclose(problem);
 
-	//to submit
-	system("/tmp/dir/software/planners/madagascar/M -Q domain.pddl problem.pddl | grep -i click > out");
-	//to run on chococino
-	//system("/home/software/planners/madagascar/M -Q domain.pddl problem.pddl | grep -i click > out");
-	//system("/home/software/planners/downward/fast-downward.py --alias lama-first domain9.pddl problem.pddl | grep -i click > out");
-	system("grep -Eo '(click [a-zA-Z][a-zA-Z][a-zA-Z][0-9]+[0-9]+)' < out > out2");
-	system("sed 's/^[0-9]* : (click loc\\([0-9]*\\)-\\([0-9]*\\))/\\(click \\1 \\2\\);/' out > outFile");
-	system("sed '$ s/.$//' outFile > outFile2");
+  #ifdef SUBMIT
+
+    #ifdef AGILE
+      system("/tmp/dir/software/planners/madagascar/M -Q domain.pddl problem.pddl | grep -i click > out");
+      system("grep -Eo '(click [a-zA-Z][a-zA-Z][a-zA-Z][0-9]+[0-9]+)' < out > out2");
+      system("sed 's/^[0-9]* : (click loc\\([0-9]*\\)-\\([0-9]*\\))/\\(click \\1 \\2\\);/' out > outFile");
+    #endif 
+    
+    #ifdef OPTIMAL
+    
+    #endif 
+
+    #ifdef SATISFICING 
+
+    #endif 
+
+    system("sed '$ s/.$//' outFile > outFile2");
+    system("cat outFile2");
+
+  #endif 
+
+  #ifdef CHOCOCINO
+    
+    #ifdef AGILE
+	    system("/home/software/planners/madagascar/M -Q domain.pddl problem.pddl | grep -i click > out");
+	    system("grep -Eo '(click [a-zA-Z][a-zA-Z][a-zA-Z][0-9]+[0-9]+)' < out > out2");
+	    system("sed 's/^[0-9]* : (click loc\\([0-9]*\\)-\\([0-9]*\\))/\\(click \\1 \\2\\);/' out > outFile");
+    #endif 
+    
+    #ifdef OPTIMAL
+    
+    #endif 
+
+    #ifdef SATISFICING 
+
+    #endif 
+
+    system("sed '$ s/.$//' outFile > outFile2");
     system("cat outFile2");
 
 	return 0;
 }
+
+  #endif 
+  #endif 
+  #endif 
+  #endif 
+  #endif 
+  #endif 
+
 

@@ -1,6 +1,6 @@
-C# Fast Downward Planner
+#Parsers 
 
-Este repositório contém três parsers desenvolvidos para três diferentes tracks: Óptima, Satisfy, e Agile. Cada parser é adaptado para resolver problemas específicos no domínio de planejamento automático usando o Fast Downward Planner.
+Este diretório contém três parsers desenvolvidos para três diferentes tracks: Óptima, Satisfy, e Agile. Cada parser é adaptado para resolver problemas específicos no domínio de planejamento automático usando o Fast Downward Planner.
 
 ## Tracks
 

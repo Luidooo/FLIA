@@ -1,12 +1,14 @@
 # FLIA
 
-Este repositório é um trabalho da matéria de Tópicos Especiais em Engenharia de Software FLIA (Fundamentos Lógicos da Inteligência Artificial), ministrada pelo professor Bruno Ribas na FGA-UnB.
+Este repositório é um trabalho da matéria FLIA, Fundamentos Lógicos da Inteligência Artificial, ministrada pelo professor Bruno Ribas na FGA-UnB.
 
 <!--
 ![LightsOut em ação](./images/lightsOutVideoShort.mp4)
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0h7ywyQh48c" frameborder="0" allowfullscreen></iframe>
+
+https://github.com/Luidooo/LightsOut-RGB/assets/130774295/da904536-e363-42f5-aad5-e7ba61fb5b46
+
 
 <!--
 <video controls>

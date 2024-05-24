@@ -23,5 +23,20 @@ Temos lâmpadas dos seguintes tipos:
 - `#` quebrado total, onde ao clicar muda-se linha e coluna, mas se ao chegar nele não muda de estado
 - `|` quebrado vertical, onde clicar muda-se ele próprio e suas colunas, apenas 
 
-A sequência de mudança de cor segue o padrão: White -> Red -> Green -> Blue -> White..., onde para definir a cor da lâmpada basta escrever sua inicial em maiúsculo.
+A sequência de mudança de cor segue o padrão: 
+- `White -> Red -> Green -> Blue -> White...`
+onde para definir a cor da lâmpada basta escrever sua inicial em maiúsculo. 
+- `W`
+- `R`
+- `G`
+- `B`
+
+Exemplo de mapas:
+```
+*W-R-R-B
+-R|W-W-G
+-B-G_G-G
+-R-W-W#W
+```
+
 
